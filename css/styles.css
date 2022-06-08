@@ -172,12 +172,10 @@ hr {
   display: none;
 }
 
-
 .wrapper {
   max-inline-size: 902px;
   margin: auto;
 }
-
 
 .main-content {
   background: white;
@@ -192,7 +190,6 @@ hr {
   font-size: 0;
   overflow-x:hidden;
 }
-
 
 .video {
   margin: 0;
@@ -296,13 +293,13 @@ footer p {
     inset-block-start: 0;
     inset-inline-start: -208px;
     inline-size: 188px;
+  }
 
     h1{
       font-size: 60px;
       margin-block-start: 64px;
     }
   }
-}
 
 
 .div{
