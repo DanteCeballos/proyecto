@@ -31,7 +31,6 @@
     --white30: #212121;
     --white20: #212429;
     --white10: #616161;
-
 }
 
 body{
@@ -118,15 +117,15 @@ hr {
 }
 
 pre {
-
   background: #FEC62E;
   padding: 40px;
   font-family: 'Roboto';
   line-height: 24px;
+  overflow: auto;
+  overflow-x: hidden;
 }
 
 h2 {
-
   font-size: 40px;
     margin-block: 40px;
     font-weight: bold;
@@ -149,6 +148,11 @@ p {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
   color: var(--white20);
+}
+
+.hero {
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(/images/pattern.png);
+  block-size: 50px;
 }
 
 hr {
@@ -177,7 +181,6 @@ hr {
 
 .main-content {
   background: white;
-
 }
 
 .slider-container {
@@ -227,7 +230,6 @@ hr {
   margin-block-end: 24px;
   /* width: 328px; */
   text-align: center;
-
 }
 
 .form input[type="submit"] {
@@ -272,17 +274,12 @@ footer p {
   padding-inline-end: 16px;
 }
 
-.hero {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(/images/pattern.png);
-  block-size: 50px;
 
-}
-
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 700px){
 
   .hero {
-      block-size: 350px;
-    }
+    block-size: 350px;
+  }
 
   .header {
     position: sticky;
@@ -304,7 +301,9 @@ footer p {
       font-size: 60px;
       margin-block-start: 64px;
     }
+  }
 }
+
 
 .div{
 display: block;
@@ -312,7 +311,6 @@ display: block;
 
 
 .section-content {
-
   margin-top: 164px;
   position: relative;
 }
@@ -333,7 +331,6 @@ display: block;
 
 .section-content * hr {
   display: none;
-
 }
 
 .section-content img {
@@ -344,19 +341,16 @@ display: block;
 
 .section-content {
   counter-reset: titleList;
-
 }
 
 .section-content h3 {
   counter-increment: titleList;
   padding-bottom: 4px;
-
 }
 
 .section-content h3::before {
   content: counter(titleList, decimal) '. ';
   padding-bottom: 8px;
-
 }
 
 .section-content h3::after {
