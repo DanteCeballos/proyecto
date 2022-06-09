@@ -151,8 +151,9 @@ p {
 }
 
 .hero {
-  background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(/images/pattern.png);
+  background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(../images/pattern.png);
   block-size: 50px;
+
 }
 
 hr {
@@ -315,14 +316,6 @@ display: block;
   position: relative;
 }
 
-.no-h3-after h3::after {
-  content: none;
-}
-
-.no-section-content no-h3-after{
-content: none;
-
-}
 
 .section-content:first-of-type {
   margin: 0;
@@ -348,21 +341,27 @@ content: none;
   max-inline-size: 100%;
 }
 
+.section-content-2 img{
+
+  width: 100%;
+}
+
 .section-content {
   counter-reset: titleList;
 }
 
 .section-content h3 {
+  /* display: inline; */
   counter-increment: titleList;
-  padding-bottom: 4px;
+  /* padding-bottom: 4px; */
 }
 
 .section-content h3::before {
   content: counter(titleList, decimal) '. ';
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
 }
 
-.section-content h3::after {
+/* .section-content h3::after {
   content: '';
   width: 80px;
   height: 4px;
@@ -371,7 +370,7 @@ content: none;
   position: absolute;
   left: 0;
   bottom: 0;
-}
+} */
 
 h1 {
   font-size: 60px;
