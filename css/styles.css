@@ -108,7 +108,7 @@ h1{
   font-weight: normal;
 }
 
-h1~p {
+h1 + p {
   margin-bottom: 64px;
 }
 
@@ -306,10 +306,22 @@ footer p {
 display: block;
 }
 
+.no-count h3::before {
+  content: none;
+}
 
 .section-content {
   margin-top: 164px;
   position: relative;
+}
+
+.no-h3-after h3::after {
+  content: none;
+}
+
+.no-section-content no-h3-after{
+content: none;
+
 }
 
 .section-content:first-of-type {
