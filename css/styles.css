@@ -141,6 +141,7 @@ h3 {
     top: 0;
 }
 
+
 p {
   display: block;
     margin-block-start: 1em;
@@ -342,7 +343,6 @@ display: block;
 }
 
 .section-content-2 img{
-
   width: 100%;
 }
 
@@ -352,13 +352,24 @@ display: block;
 
 .section-content h3 {
   /* display: inline; */
+  content: '';
   counter-increment: titleList;
-  /* padding-bottom: 4px; */
+  display: block;
+  border-bottom: 4px solid var(--white30);
+  padding-bottom: 4px;
+  width:fit-content;
 }
 
 .section-content h3::before {
-  content: counter(titleList, decimal) '. ';
+  content: counter(titleList, decimal)'. ';
   /* padding-bottom: 8px; */
+}
+
+
+.hidden-number h3 {
+  counter-increment: none;
+  border: 0;
+  font-weight: normal;
 }
 
 /* .section-content h3::after {
@@ -370,7 +381,7 @@ display: block;
   position: absolute;
   left: 0;
   bottom: 0;
-} */
+}
 
 h1 {
   font-size: 60px;
