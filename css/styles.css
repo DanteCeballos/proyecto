@@ -129,7 +129,6 @@ h2 {
   font-size: 32px;
     margin-block: 40px;
     font-weight: bold;
-
 }
 
 h3 {
@@ -154,7 +153,6 @@ p {
 .hero {
   background-image: linear-gradient(to top, rgba(255, 255, 255, .2), transparent), url(../images/pattern.png);
   block-size: 50px;
-
 }
 
 hr {
@@ -214,7 +212,6 @@ hr {
   border-radius: 50%;
 }
 
-
 .form input {
   inline-size: 100%;
   border: 1px solid var(--white30);
@@ -253,7 +250,6 @@ appearance: auto;
 cursor: text;
 margin: 0em;
 }
-
 
 .form input::-webkit-input-placeholder {
   color: var(--white20);
@@ -318,7 +314,6 @@ footer p {
     }
   }
 
-
 .div{
 display: block;
 }
@@ -355,7 +350,6 @@ display: block;
   margin-top: 40px;
   display:block;
   max-inline-size: 100%;
-
 }
 
 .section-content-2 img{
@@ -386,7 +380,6 @@ display: block;
   border: 0;
   font-weight: normal;
 }
-
 /* .section-content h3::after {
   content: '';
   width: 80px;
