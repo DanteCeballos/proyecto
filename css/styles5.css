@@ -1,0 +1,315 @@
+@font-face {
+  font-family: Charter;
+  src: url('../fonts/fonts/charter-regular.otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Charter;
+  src: url('../fonts/fonts/charter-italic.otf');
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Charter;
+  src: url('../fonts/fonts/charter-bold.otf');
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Charter;
+  src: url('../fonts/fonts/charter-bold-italic.otf');
+  font-style: italic;
+  font-weight: bold;
+}
+
+:root {
+  font-size: 18px;
+  --white30: #FFFFFE;
+  --white20: #B8C1EC;
+  --white10: #3A3539;
+}
+
+body {
+  color: var(--white30);
+  font-family: 'Nunito', sans-serif;
+  background: #232946;
+  margin: 0;
+}
+
+a {
+  color:#EEBBC3;;
+}
+
+.header-content {
+  padding-inline: 20px;
+}
+
+header {
+  margin-block-start: 20px;
+  font-size: 14px;
+  color: var(--white);
+}
+
+header li {
+  color: var(--white20);
+  margin-block-end: 16px;
+}
+
+header a {
+  color: var(--white20);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: var(--white30);
+}
+
+nav details summary {
+  font-weight: bold;
+}
+
+blockquote {
+  background-color: #EEBBC3;
+  font-size: 24px;
+  margin: 32px 0;
+  padding-left: 16px;
+  line-height: 24px;
+}
+
+blockquote p {
+  color:#232946;
+}
+
+blockquote span {
+  color:#232946;
+}
+
+blockquote span::before {
+  content: "-";
+}
+
+h1 {
+  font-size: 40px;
+  margin-block-start: 20px;
+  margin-block-end: 16px;
+}
+
+h2 {
+  font-size: 2em;
+  margin-block: 40px;
+}
+
+h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-block: 16px;
+}
+
+hr {
+  margin-block: 40px;
+  border-color: rgba(97, 97, 97, 0.2);
+}
+
+pre {
+  background:#232946;
+  padding: 40px;
+  overflow: auto;
+  border-radius: 8px;
+  top: 124px;
+  gap: 10px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+p {
+  color: var(--white20);
+}
+
+.section-content img {
+  margin-block-start: 40px;
+  display: block;
+  max-inline-size: 100%;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content h3 {
+  counter-increment: titleList;
+  content: '';
+  display: block;
+  padding-bottom: 4px;
+  width: fit-content;
+
+}
+
+.section-content ol {
+  color: var(--white20);
+}
+
+.section-content li {
+  color: var(--white20);
+}
+
+.section-content h3::before {
+  content: counter(titleList, decimal)'. ';
+}
+
+.section-content h3::after {
+  width: 32px;
+  height: 4px;
+  background: var(--white30);
+  display: inline-block;
+}
+
+.hidden-number h3 {
+  counter-set: none;
+  border: 0;
+  font-weight: normal;
+}
+
+blockquote {
+  margin-block-start: 80px;
+  margin-block-end: 63px;
+  background-color: #EEBBC3;
+  border-radius: 8px;
+  line-height: 32px;
+  font-size: 24px;
+  padding-inline-end: 24px;
+  padding-inline-start: 24px;
+  padding-block-start: 24px;
+  padding-block-end: 24px;
+  margin: 32px 0;
+  padding-left: 16px;
+}
+
+blockquote p {
+  color: #232946;
+}
+
+.main hr {
+  display: none;
+}
+
+.wrapper {
+  max-inline-size: 902px;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline: 60px;
+}
+
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+  overflow-x: hidden;
+}
+
+.video {
+  margin: 0;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 10px;
+}
+
+.slider-bullet {
+  display: inline-block;
+  inline-size: 15px;
+  block-size: 15px;
+  background: white;
+  border-radius: 50%;
+}
+
+.form input {
+  inline-size: 100%;
+  border: 1px solid #FFFFFE;
+  background: #232946;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding-inline: 16px;
+  padding-block: 12px;
+  color: #232946;
+  font-size: 16px;
+  display: block;
+  margin-block-end: 24px;
+}
+
+.form input[type="submit"] {
+  background-color:#EEBBC3 ;
+  border: none;
+}
+
+.form input::-webkit-input-placeholder {
+  color: var(--white20);
+}
+
+@media screen and (min-width: 700px) {
+
+  .header {
+    position: sticky;
+    inset-block-start: -45px;
+  }
+
+  .header-content {
+    position: relative;
+    inset-block-start: 0px;
+    padding-inline: 0;
+  }
+
+  header {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: -208px;
+    inline-size: 188px;
+  }
+
+  h1 {
+    font-size: 60px;
+    margin-block-start: 64px;
+
+  }
+}
+
+footer {
+  background: #EEBBC3;
+  margin-block-start: 90px;
+}
+
+.footer-content {
+  block-size: 177px;
+  display: grid;
+  align-content: center;
+}
+
+footer p {
+  color: #251F24;
+  font-family: 'Nunito', sans-serif font-size: 32px;
+  font-style: normal;
+  weight: 400;
+  text-align: center;
+  margin-block-start: 0;
+}
+
+.social {
+  text-align: center;
+}
+
+.social img {
+  text-align: center;
+  padding-inline-end: 16px;
+}
