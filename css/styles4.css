@@ -26,7 +26,6 @@
   font-weight: bold;
 }
 
-
 :root {
   font-size: 16px;
   --white30: #212121;
@@ -48,7 +47,6 @@ header {
   margin-block-start: 0px;
   font-size: 14px;
   color: var(--white10);
-
 }
 
 header a {
@@ -57,12 +55,17 @@ header a {
 }
 
 header a:hover {
-  color: var(--gray30);
+  font-weight: bold;
 }
 
 nav details summary {
+  color:var(--white10);
   font-weight: bold;
   line-height: 25px;
+  margin-top: 24px;
+  margin-bottom: 16px;
+  cursor: pointer;
+
 }
 
 header li {
@@ -109,6 +112,7 @@ h1+p {
   margin-bottom: 64px;
   text-align: center;
 }
+
 
 hr {
   margin-block: 40px;
@@ -180,7 +184,6 @@ hr {
 }
 
 .slider-container {
-  /* block-size: 100px; */
   display: block;
   overflow: auto;
   scroll-behavior: smooth;
@@ -200,6 +203,7 @@ hr {
 .slider-bullet-list {
   text-align: center;
   margin-block-start: 15px;
+  font-size: 0;
 }
 
 .slider-bullet {
@@ -251,8 +255,11 @@ input {
 
 .form input::-webkit-input-placeholder {
   color: var(--white20);
-  cursor: pointer;
-  text-decoration: underline;
+
+}
+
+.form ::-webkit-input-placeholder {
+  color: var(--white20);
 }
 
 footer {
@@ -262,7 +269,6 @@ footer {
 
 .footer-content {
   block-size: 177px;
-  /* height: 177px; */
   display: grid;
   align-content: center;
 }
@@ -374,7 +380,6 @@ footer p {
 
 .section-content h3::before {
   content: counter(titleList, decimal)'. ';
-
 }
 
 .hidden-number h3 {
