@@ -45,9 +45,10 @@ a {
 }
 
 header {
-  margin-block-start: 20px;
+  margin-block-start: 0px;
   font-size: 14px;
   color: var(--white10);
+
 }
 
 header a {
@@ -116,10 +117,12 @@ hr {
 
 pre {
   background: white;
+  border-radius: 8px;
   border-bottom: 8px solid #5551FF;
   border-top: 8px solid #5551FF;
   border-left: 8px solid #5551FF;
   border-right: 8px solid #5551FF;
+  box-shadow: -10px 10px 0 0 #abaaf6;
   padding: 40px;
   font-family: 'Roboto';
   line-height: 24px;
@@ -203,8 +206,9 @@ hr {
   display: inline-block;
   inline-size: 15px;
   block-size: 15px;
-  background: black;
+  background: #8E2DE280;
   border-radius: 50%;
+  margin-inline: 2px;
 }
 
 .form input {
@@ -287,20 +291,26 @@ footer p {
 
   .header {
     position: sticky;
-    inset-block-start: -45px;
+    inset-block-start: -55px;
+    scroll-behavior: smooth;
+    clear: right;
+    margin-block-start: 0;
+    float: right;
   }
 
   .header-content {
     position: relative;
-    inset-block-start: 65px;
+    inset-block-start: 55px;
     padding-inline: 0;
+    padding-block-start: 0;
+
   }
 
   header {
     position: absolute;
     inset-block-start: 0;
     inset-inline-start: -208px;
-    inline-size: 188px;
+    inline-size: 200px;
   }
 
   h1 {
@@ -342,9 +352,9 @@ footer p {
 }
 
 .section-content img {
-  margin-top: 40px;
+  margin:auto;
   display: block;
-  max-inline-size: 100%;
+  max-width: 100%;
 }
 
 .section-content-2 img {
